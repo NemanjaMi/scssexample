@@ -1,0 +1,272 @@
+$font: Helvetica,sans-serif;
+$primary-text: #000000;
+$box-text: #FFFFFF;
+$red-back: #df3e43;
+$grean-back: #7acfd6;
+$black-back: #000000;
+$gray-back: #ececec;
+$white-back: #FFFFFF;
+$red-text: #df3e43;
+$gray-text: #bcbcbc;
+$grean-text: #7acfd6;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+.wraper {
+    width: 100%;
+    margin: auto;
+}
+.container {
+    max-width: 1144px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container-full {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    max-width: 1124px;
+    width: 100%;
+    position: relative;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+header {
+    height: 85px;
+    background-color: #ffffff;
+    border-bottom: 2px #C4C4C4 double;
+}
+.logo {
+    float: left;
+    height: 85px;
+    img {
+        width: 120px;
+        margin: 10px 0px;
+    }
+}
+nav {
+    float: right;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        height: 85px;
+    }
+    a {
+        display: block;
+        padding: 32px 12px;
+        text-decoration: none;
+        color: $grean-text;
+        font-weight: bold;
+    }
+    li:hover {
+        background-color: #F0F0F0;
+		
+    }
+	a:hover {color:#3476af;}
+}
+.opasity04 {
+    opacity: 0.4;
+}
+.biginig {
+    min-height: 507px;
+    height: 100%;
+}
+.box {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.left {
+    @extend .box;
+    background-image: url(imac-apple-mockup-app-38544.jpeg);
+    background-color: rgba(223,62,67 ,.60);
+    background-position: center;
+    background-size: cover;
+    .textbox {
+        background-color: rgba(223,62,67 ,.60);
+    }
+}
+.right {
+    @extend .box;
+    background-color: $grean-back;
+}
+.italic {
+    font-style: italic;
+}
+.textbox {
+    padding: 120px 100px 150px;
+    h3 {
+        font-size: 32px;
+        color: $box-text;
+    }
+    p {
+        color: $box-text;
+    }
+    button {
+        background: transparent none repeat scroll 0% 0%;
+        border: 2px solid rgb(255,255,255);
+        color: #FFF;
+        cursor: pointer;
+    }
+}
+.wraper-hi {
+    background-color: $gray-back;
+}
+.discription {
+    text-align: center;
+    padding: 50px 0;
+    background-color: $gray-back;
+    min-height: 400px;
+    height: 100%;
+    .hi {
+        border: 3px $red-back solid;
+        display: inline-block;
+        font-size: 32px;
+        text-align: center;
+        padding: 10px 20px;
+        color: $red-text;
+        font-weight: bold;
+    }
+    a {
+        color: $primary-text;
+        text-decoration: none;
+        padding-bottom: 50px;
+    }
+}
+.weknow {
+    background: url(letter.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15%;
+    margin-top: -100px;
+    .inside {
+        background-color: rgba(223,62,67 ,.60);
+        padding: 30px 50px 60px;
+        margin: auto;
+        width: 80%;
+        color: #FFF;
+    }
+    p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 48px;
+        color: #FFF;
+        line-height: 0;
+    }
+    button {
+        background: transparent none repeat scroll 0% 0%;
+        border: 5px solid rgb(255,255,255);
+        color: #FFF;
+        cursor: pointer;
+        padding: 10px 30px;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+}
+.menage {
+    background-color: $white-back;
+    background-size: cover;
+    .firstrd {
+        width: 33.33%;
+        float: left;
+        padding: 20px 20px 20px 0;
+        box-sizing: border-box;
+        &:last-child {
+            padding-right: 0;
+        }
+        .rd {
+            float: left;
+            width: 100%;
+            background-color: $gray-back;
+            padding: 60px 50px 100px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        img {
+            max-width: 150px;
+            width: 100%;
+        }
+        button {
+            background: transparent none repeat scroll 0% 0%;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.half {
+    background: #34a3f7;
+    background: -moz-linear-gradient(left,#34a3f7 0%,#34a3f7 48%,#e73827 48%,#e73827 100%);
+    background: -webkit-gradient(left top,right top,color-stop(0%,#34a3f7),color-stop(48%,#34a3f7),color-stop(48%,#e73827),color-stop(100%,#e73827));
+    background: -webkit-linear-gradient(left,#34a3f7 0%,#34a3f7 48%,#e73827 48%,#e73827 100%);
+    background: -o-linear-gradient(left,#34a3f7 0%,#34a3f7 48%,#e73827 48%,#e73827 100%);
+    background: -ms-linear-gradient(left,#34a3f7 0%,#34a3f7 48%,#e73827 48%,#e73827 100%);
+    background: linear-gradient(to right,#34a3f7 0%,#34a3f7 48%,#e73827 48%,#e73827 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34a3f7',endColorstr='#e73827',GradientType=1 );
+    clear: both;
+    height: 100px;
+    .content {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        h3 {
+            font-style: italic;
+            font-weight: 100;
+            color: $box-text;
+            span {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+        }
+    }
+}
+.botom-full {
+    background-color: $white-back;
+    .botom {
+        float: left;
+        width: 33.33%;
+        font-size: 24px;
+        background-color: $white-back;
+        height: 100px;
+        h3 {
+            margin: 40px 0;
+            font-style: italic;
+        }
+        p {
+            font-style: italic;
+            text-align: center;
+            margin: 40px 0;
+        }
+        button {
+            background: transparent none repeat scroll 0% 0%;
+            border: 2px solid #d2d2d2;
+            color: $red-text;
+            cursor: pointer;
+            padding: 5px;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+    }
+}
