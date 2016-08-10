@@ -234,10 +234,12 @@ footer .contact {
       width: 50px; }
   footer .contact .data {
     float: left;
-    width: 50%;
     padding: 15px; }
 footer .social {
   float: left;
   width: 50%; }
+  footer .social img {
+    width: 50px;
+    margin-right: 5px; }
 
 /*# sourceMappingURL=main.css.map */
