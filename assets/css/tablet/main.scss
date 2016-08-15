@@ -25,14 +25,13 @@ body {
     margin: auto;
 }
 .container {
-    max-width: 1144px;
+    max-width: 1024px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
 .container-full {
-    padding-right: 15px;
-    padding-left: 15px;
+  
     margin-right: auto;
     margin-left: auto;
 }
@@ -87,8 +86,7 @@ nav {
     height: 100%;
 }
 .box {
-    width: 50%;
-    float: left;
+    width: 100%;
     text-align: center;
 }
 .left {
@@ -167,7 +165,7 @@ nav {
     h3 {
         font-size: 48px;
         color: #FFF;
-        line-height: 0;
+        
     }
     button {
         background: transparent none repeat scroll 0% 0%;
@@ -184,13 +182,11 @@ nav {
     background-color: $white-back;
     background-size: cover;
     .firstrd {
-        width: 33.33%;
-        float: left;
-        padding: 20px 20px 20px 0;
-        box-sizing: border-box;
-        &:last-child {
-            padding-right: 0;
-        }
+       padding: 20px 0;
+	   box-sizing: border-box;
+       height: 100%;
+       min-height: 430px;
+       
         .rd {
             float: left;
             width: 100%;
@@ -211,22 +207,18 @@ nav {
     }
 }
 .half {
-    background: #34a3f7;
-    background: -moz-linear-gradient(left,#7acfd6 0%,#7acfd6 48%,#e73827 48%,#e73827 100%);
-    background: -webkit-gradient(left top,right top,color-stop(0%,#7acfd6),color-stop(48%,#7acfd6),color-stop(48%,#e73827),color-stop(100%,#e73827));
-    background: -webkit-linear-gradient(left,#7acfd6 0%,#7acfd6 48%,#e73827 48%,#e73827 100%);
-    background: -o-linear-gradient(left,#7acfd6 0%,#7acfd6 48%,#e73827 48%,#e73827 100%);
-    background: -ms-linear-gradient(left,#7acfd6 0%,#7acfd6 48%,#e73827 48%,#e73827 100%);
-    background: linear-gradient(to right,#7acfd6 0%,#7acfd6 48%,#e73827 48%,#e73827 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7acfd6',endColorstr='#e73827',GradientType=1 );
-    clear: both;
-    height: 100px;
+   
+ 
     .content {
         float: left;
-        width: 50%;
+        width: 100%;
         padding: 20px;
         text-align: center;
         box-sizing: border-box;
+		height:100px;
+		background-color:#7acfd6;
+		&:last-child {
+		background-color:#e73827;}
         h3 {
             font-style: italic;
             font-weight: 100;
@@ -241,17 +233,19 @@ nav {
 }
 .botom-full {
     background-color: $white-back;
-    height: 100px;
+    height: 300px;
 
     .botom {
         float: left;
-        width: 33.33%;
+        width: 100%;
         font-size: 24px;
         background-color: $white-back;
         height: 100px;
         h3 {
             margin: 40px 0;
             font-style: italic;
+			text-align: center;
+
         }
         p {
             font-style: italic;
@@ -268,12 +262,14 @@ nav {
             font-size: 24px;
             font-weight: bold;
             margin: 30px 0;
+			text-align: center;
+
         }
     }
 }
 
 .footer{
-	height:250px;
+	height: 430px;
 	bottom:0;
 	padding-top: 30px;
 	background-color:$gray-back;
@@ -291,7 +287,8 @@ nav {
 			img { width:50px;}}
 	.data{float:left;
 	
-	padding:15px;}
+	padding:15px;
+	font-size:13px;}
 		
 	}
 	
