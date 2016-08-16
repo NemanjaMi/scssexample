@@ -205,11 +205,10 @@ nav {
       color: #df3e43;
       cursor: pointer;
       padding: 5px;
-      float: right;
       font-size: 24px;
       font-weight: bold;
       margin: 30px 0;
-      text-align: center; }
+      display: block; }
 
 .footer {
   box-sizing: border-box;
